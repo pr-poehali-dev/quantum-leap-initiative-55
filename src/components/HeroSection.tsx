@@ -5,33 +5,24 @@ export function HeroSection() {
   return (
     <section className="container max-w-screen-xl py-20 text-center">
       <div className="flex justify-center mb-6">
-        <Badge variant="outline" className="px-4 py-1 text-sm rounded-full border-neutral-700">
-          Публичная бета-версия 2.0
+        <Badge variant="outline" className="px-4 py-1 text-sm rounded-full border-purple-700 text-purple-300">
+          🔥 Всегда свежий ассортимент
         </Badge>
       </div>
       <h1 className="text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl mb-6">
-        Добро пожаловать
+        Лучший магазин
         <br />
-        в Nexora
+        <span className="text-purple-400">вейп-товаров</span>
       </h1>
       <p className="mx-auto max-w-2xl text-muted-foreground mb-8">
-        Универсальная платформа продуктивности, которая помогает командам работать вместе, анализировать данные и эффективно масштабировать бизнес.
+        Жидкости, поды, испарители и одноразки — огромный выбор, быстрая доставка и только оригинальная продукция от проверенных брендов.
       </p>
       <div className="flex flex-wrap justify-center gap-4">
-        <Button size="lg" className="px-8">
-          Функции
+        <Button size="lg" className="px-8 bg-purple-600 hover:bg-purple-700 text-white" onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}>
+          Смотреть каталог
         </Button>
-        <Button size="lg" variant="outline" className="px-8">
-          Демо
-        </Button>
-        <Button size="lg" variant="outline" className="px-8">
-          Цены
-        </Button>
-        <Button size="lg" variant="outline" className="px-8">
-          Ресурсы
-        </Button>
-        <Button size="lg" variant="outline" className="px-8">
-          Поддержка
+        <Button size="lg" variant="outline" className="px-8 border-purple-700 text-purple-300 hover:bg-purple-900/30">
+          Написать нам
         </Button>
       </div>
     </section>
