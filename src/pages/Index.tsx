@@ -1,14 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Navbar } from "@/components/Navbar"
+import { HeroSection } from "@/components/HeroSection"
+import { DashboardPreview } from "@/components/DashboardPreview"
+import { FeaturesSection } from "@/components/FeaturesSection"
+import { NextGenSection } from "@/components/NextGenSection"
+import { PersonalOsSection } from "@/components/PersonalOsSection"
+import { StatsSection } from "@/components/StatsSection"
+import { TestimonialsSection } from "@/components/TestimonialsSection"
+import { FaqSection } from "@/components/FaqSection"
+import { CtaSection } from "@/components/CtaSection"
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="dark bg-black text-white min-h-screen">
+      <Navbar />
+      <main className="flex min-h-screen flex-col items-center">
+        <HeroSection />
+        <DashboardPreview />
+        <FeaturesSection />
+        <NextGenSection />
+        <PersonalOsSection />
+        <StatsSection />
+        <TestimonialsSection />
+        <FaqSection />
+        <CtaSection />
+      </main>
     </div>
-  );
-};
+  )
+}
 
-export default Index;
+export default Index
